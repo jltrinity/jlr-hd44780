@@ -1,7 +1,7 @@
 /*
  * Juan Luis Román
  * HD44780 LCD for AVR Microcontrollers
- * 8 August 2016
+ * August 2016
  * Version: 1.0
  *
 */
@@ -40,7 +40,6 @@ void LCD_sendByte(byte data){
 	data <<= 4;
 	LCD_sendNibble(data);
 	LCD_pulseEnableLine();
-	//??
 }
 
 void LCD_sendChar(byte ch){
@@ -55,7 +54,7 @@ void LCD_sendCmd(byte cmd){
 
 void LCD_showMessage(const char *t){
 	while(*t){
-		LCD_sendChar(*t++);	
+		LCD_sendChar(*t++);	//send char
 	}
 }
 

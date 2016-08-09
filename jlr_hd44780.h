@@ -1,9 +1,29 @@
 /*
  * Juan Luis Román
  * HD44780 LCD for AVR Microcontrollers
- * 8 August 2016
+ * August 2016
  * Version: 1.0
  *
+*/
+
+/* PINOUT */
+/* LCD -- AVR
+*  1 GND 		-- 	GND
+*  2 VCC 		-- 	VCC
+*  3 Contrast 	--  GND or potentiometer	
+*  4 RS			--  PB0
+*  5 RW			--  GND
+*  6 CLK		--  PB1
+*  7 D0			--  
+*  8 D1			--
+*  9 D2			--
+*  10 D3		--
+*  11 D4		--  PB2
+*  12 D5		--  PB3
+*  13 D6		--  PB4
+*  14 D7		--  PB5
+*  15 + LED		--  VCC
+*  16 - LED		--  GND
 */
 
 #define byte uint8_t
